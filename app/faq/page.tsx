@@ -18,8 +18,8 @@ export default function AboutPage() {
           The 1 Dollar Fund is an experiment set to run for decades, aimed at proving that $1 per
           hour is enough to retire on Bitcoin. Starting on 1st of January 2025, $1 of Bitcoin is
           purchased every hour by the fund. This website tracks these purchases. It is still early
-          and accessible to copy this strategy. The barrier of entry is only expected to increase
-          over time.
+          and possible to copy this strategy. The barrier of entry is only expected to increase over
+          time.
         </p>
 
         <h2>Why are you doing this?</h2>

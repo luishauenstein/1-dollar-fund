@@ -1,0 +1,5 @@
+gsheet total holdings formula (non-recursive):
+=ARRAYFORMULA(IF(A2:A = "", "", SUMIF(ROW(D2:D), "<=" & ROW(D2:D), D2:D)))
+
+sheet fetch URL:
+https://docs.google.com/spreadsheets/d/1n2Exw1FUgsObaz8unkr6FdJLNqSxwNY1M5wqzuBTKC8/gviz/tq?tqx=out:json&sheet=btc-buys

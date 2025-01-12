@@ -1,8 +1,19 @@
 import { NextResponse } from 'next/server';
 
-const SHEET_ID = '1n2Exw1FUgsObaz8unkr6FdJLNqSxwNY1M5wqzuBTKC8';
-const SHEET_NAME = 'btc-buys';
-const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${SHEET_NAME}`;
+// Add interfaces for type safety
+interface GoogleSheetsCell {
+  v: string | number;
+}
+
+interface GoogleSheetsRow {
+  c: (GoogleSheetsCell | null)[];
+}
+
+interface GoogleSheetsResponse {
+  table: {
+    rows: GoogleSheetsRow[];
+  };
+}
 
 interface HoldingData {
   date: string;
@@ -11,6 +22,10 @@ interface HoldingData {
   totalInvested: number;
   costBase: number;
 }
+
+const SHEET_ID = '1n2Exw1FUgsObaz8unkr6FdJLNqSxwNY1M5wqzuBTKC8';
+const SHEET_NAME = 'btc-buys';
+const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${SHEET_NAME}`;
 
 function parseGoogleSheetsDate(dateStr: string): string {
   const matches = dateStr.match(/\d+/g);
@@ -35,7 +50,7 @@ export async function GET() {
     const text = await response.text();
     // Remove the Google Sheets response prefix and suffix
     const jsonString = text.substring(text.indexOf('{'), text.lastIndexOf('}') + 1);
-    const json = JSON.parse(jsonString);
+    const json = JSON.parse(jsonString) as GoogleSheetsResponse;
 
     if (!json.table?.rows) {
       throw new Error('Invalid data format from Google Sheets');
@@ -44,14 +59,14 @@ export async function GET() {
     // Get the cost base from cell I2 (second row, 9th column, index 8)
     const costBase = json.table.rows[1]?.c[8]?.v ?? 0;
 
-    const data = json.table.rows.map((row: any) => {
+    const data: HoldingData[] = json.table.rows.map((row: GoogleSheetsRow) => {
       const cells = row.c;
       if (!cells?.[0]?.v || !cells?.[2]?.v || !cells?.[4]?.v || !cells?.[5]?.v) {
         throw new Error('Missing required data in row');
       }
 
       return {
-        date: parseGoogleSheetsDate(cells[0].v),
+        date: parseGoogleSheetsDate(cells[0].v.toString()),
         btcAmount: Number(cells[4].v), // Fund Value (BTC)
         usdAmount: Number(cells[5].v), // Fund Value (USD)
         totalInvested: Number(cells[2].v), // Cumulative Invested Amount

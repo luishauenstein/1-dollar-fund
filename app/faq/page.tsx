@@ -26,7 +26,7 @@ export default function AboutPage() {
         <ol>
           <li>To encourage people to do something for the long term.</li>
           <li>Because I want to prove that the strategy works and help others.</li>
-          <li>Because it's fun to stack up a new stash from scratch in public.</li>
+          <li>Because it&apos;s fun to stack up a new stash from scratch in public.</li>
         </ol>
 
         <h2>Can I really retire from $1 per hour?</h2>
@@ -45,49 +45,50 @@ export default function AboutPage() {
         <h2>But $1 per hour is over $700 per month!</h2>
         <p>
           The 1 Dollar Fund contributions are at a level where they might be a stretch to reach for
-          many people - but not impossible. If you can't commit to $1 per hour, start with less and
-          see $1 as a target amount, around which you can anchor your mind and actions. Ask
-          yourself: "What can I do that is valuable to others that allows me to earn $1 per hour of
-          my lifetime to commit to my fund?"
+          many people - but not impossible. If you can&apos;t commit to $1 per hour, start with less
+          and see $1 as a target amount, around which you can anchor your mind and actions. Ask
+          yourself: &quot;What can I do that is valuable to others that allows me to earn $1 per
+          hour of my lifetime to commit to my fund?&quot;
         </p>
         <p>
-          Most jobs earn you much more than $1 per hour, so if there's not enough money left, ask
-          yourself "Where does my income go?" Taxes? Something else? Time to optimize. The $1 per
-          hour target can help you guide your actions and make decisions for the long term.
-          Eventually, you'll be easily able to commit this amount and even much more.
+          Most jobs earn you much more than $1 per hour, so if there&apos;s not enough money left,
+          ask yourself &quot;Where does my income go?&quot; Taxes? Something else? Time to optimize.
+          The $1 per hour target can help you guide your actions and make decisions for the long
+          term. Eventually, you&apos;ll be easily able to commit this amount and even much more.
         </p>
 
         <h2>Why not invest in XYZcoin instead?</h2>
         <p>
           When you buy altcoins, you bet on the team behind the project executing well (akin to a
           startup investment). Altcoin investing thus requires careful periodic review of your
-          investments. This is not in line with the 1 Dollar Fund's passive, ultra long term
+          investments. This is not in line with the 1 Dollar Fund&apos;s passive, ultra long term
           strategy.
         </p>
         <p>
           Bitcoin has shown to outperform 99% of altcoins over time. It is on its way to becoming
-          the world's next reserve asset and riding its multi-decade appreciation phase is a once in
-          a lifetime opportunity. This is the foundation of the 1 Dollar Fund strategy.
+          the world&apos;s next reserve asset and riding its multi-decade appreciation phase is a
+          once in a lifetime opportunity. This is the foundation of the 1 Dollar Fund strategy.
         </p>
 
         <h2>Why not invest in an ETF instead?</h2>
         <p>
           ETFs are structured investment products that might be closed or change their dynamics
-          (fees, etc.) over time. For a strategy that relies on being untouched for decades, it's
-          better to hold a bearer asset directly, rather than a structured investment product
-          offered by a third party. The 1 Dollar Fund strategy relies on riding Bitcoin's adoption
-          s-curve to global reserve asset. If you are already investing in diversified equity ETFs
-          like the S&P 500 or the MSCI World, it might make sense to also set up your own 1 Dollar
-          Fund as a hedge, in case Bitcoin adoption causes a global equity repricing (= stocks go
-          down since they are now denominated against hard BTC rather than soft fiat currencies).
+          (fees, etc.) over time. For a strategy that relies on being untouched for decades,
+          it&apos;s better to hold a bearer asset directly, rather than a structured investment
+          product offered by a third party. The 1 Dollar Fund strategy relies on riding
+          Bitcoin&apos;s adoption s-curve to global reserve asset. If you are already investing in
+          diversified equity ETFs like the S&P 500 or the MSCI World, it might make sense to also
+          set up your own 1 Dollar Fund as a hedge, in case Bitcoin adoption causes a global equity
+          repricing (= stocks go down since they are now denominated against hard BTC rather than
+          soft fiat currencies).
         </p>
 
         <h2>Why exactly start in 2025?</h2>
         <p>
-          2025 and beyond are looking like an inflection point for Bitcoin's adoption as a reserve
-          asset. The technology at this point has over 15 years on its back, enough to mature and
-          prove its reliability. Adoption always follows an s-curve, and it looks like the Bitcoin
-          adoption curve is entering its steepest phase in 2025 and beyond.
+          2025 and beyond are looking like an inflection point for Bitcoin&apos;s adoption as a
+          reserve asset. The technology at this point has over 15 years on its back, enough to
+          mature and prove its reliability. Adoption always follows an s-curve, and it looks like
+          the Bitcoin adoption curve is entering its steepest phase in 2025 and beyond.
         </p>
 
         <h2>What are the risks of this strategy?</h2>
@@ -102,17 +103,17 @@ export default function AboutPage() {
           <li>
             The second risk is the US dollar rapidly losing value against Bitcoin before you had
             enough time to accumulate BTC into your One Dollar Fund. Adoption going too fast,
-            basically. I don't see this risk as too high, as currently less than 1% of the world's
-            population truly understands the implications of Bitcoin. I expect the appreciation
-            toward reserve currency status to take multiple years or even decades. If in the
-            meantime your fiat currency implodes, you can just increase contributions or denominate
-            your target contribution in another currency.
+            basically. I don&apos;t see this risk as too high, as currently less than 1% of the
+            world&apos;s population truly understands the implications of Bitcoin. I expect the
+            appreciation toward reserve currency status to take multiple years or even decades. If
+            in the meantime your fiat currency implodes, you can just increase contributions or
+            denominate your target contribution in another currency.
           </li>
           <li>
             The third risk is Bitcoin failing to ascend towards reserve currency status. I
             personally see this risk as low and have extremely high conviction in Bitcoin, but the
-            entire idea of the fund is built on this premise, so if you don't believe in it, this
-            strategy is not for you.
+            entire idea of the fund is built on this premise, so if you don&apos;t believe in it,
+            this strategy is not for you.
           </li>
         </ol>
 
@@ -120,9 +121,9 @@ export default function AboutPage() {
         <p>
           No. There are some platforms that offer hourly DCA, but what I do is maintain a
           spreadsheet with the hourly Bitcoin price and add up the purchase amounts to always know
-          the minimum BTC needed to still follow the strategy. That's operationally a lot simpler,
-          costs less in trading fees, and doesn't bind me to the very few platforms that actually
-          offer hourly DCA.
+          the minimum BTC needed to still follow the strategy. That&apos;s operationally a lot
+          simpler, costs less in trading fees, and doesn&apos;t bind me to the very few platforms
+          that actually offer hourly DCA.
         </p>
 
         <h2>How can I set up my own 1 Dollar Fund?</h2>

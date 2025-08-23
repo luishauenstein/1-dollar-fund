@@ -58,7 +58,7 @@ export function HoldingsChart() {
             yAxisId="right"
             orientation="right"
             stroke={usdColor}
-            tickFormatter={(value) => `$${value.toFixed(2)}`} // Format USD with $ and 2 decimals
+            tickFormatter={(value) => `$${Math.floor(value)}`} // Format USD with $ and no decimals
             domain={[0, 'dataMax']}
           />
           <Tooltip
